@@ -1,5 +1,20 @@
 const apiUrl = 'https://openapi.programming-hero.com/api'
 
+// scroll effect
+function scrollToElement(sectionId) {
+    const targetElement = document.getElementById(sectionId);
+    if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' }); 
+    }
+}
+const learnBtn = document.querySelectorAll('.learnBtn')
+learnBtn.forEach(btn => {
+    btn.addEventListener('click', ()=> scrollToElement('lesson-section'))
+})
+const faqBtn = document.querySelectorAll('.faqBtn')
+faqBtn.forEach(btn => {
+    btn.addEventListener('click', ()=> scrollToElement('faq-section'))
+})
 // text to audio
 function speak(text, rate=1, pitch=1, volume=1) {
     const utterance = new SpeechSynthesisUtterance(text);
