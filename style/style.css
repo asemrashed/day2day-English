@@ -1,0 +1,30 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, #6CBBE3, #1F3BC7);
+}
+.bangla-font{
+    font-family: "Hind Siliguri", sans-serif;
+}
+.active{
+    background-color: #1F3BC7;
+    color: white;
+}
+.modal{
+    width: '40%';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loadingDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
